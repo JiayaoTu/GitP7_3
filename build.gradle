@@ -41,10 +41,9 @@ dependencies {
     testCompile('org.springframework.boot:spring-boot-starter-test')
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     //compile("org.flywaydb:flyway-core:4.1.2")
+    compile group: 'org.flywaydb', name: 'flyway-core', version: '5.0.7'
+
 }
 
 //flyway {
-//    url =  'jdbc:mysql://localhost:3306/testdb?serverTimezone=UTC&useSSL=true'
-//    user = root
-//    password =root
-//}
+//    url =  '

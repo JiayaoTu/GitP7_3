@@ -15,5 +15,5 @@ import javax.transaction.Transactional;
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
     //以下所有的*都代表变量
 
-  
+
 }
