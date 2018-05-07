@@ -2,7 +2,7 @@ package com.example.employee;
 
 import com.example.employee.entity.Employee;
 import com.example.employee.repository.EmployeeRepository;
-import org.flywaydb.core.Flyway;
+//import org.flywaydb.core.Flyway;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,14 +27,14 @@ public class EmployeeJPATest {
     @Autowired
     private EmployeeRepository employeeRepository;
 
-    @Before
-    public void setUp() throws Exception {
-        //本地启动mysql，创建employee_db数据库
-        Flyway flyway = new Flyway();
-        flyway.setDataSource("jdbc:mysql://localhost:3306/employee_db","root","root");
-        flyway.clean();
-        flyway.migrate();
-    }
+//    @Before
+//    public void setUp() throws Exception {
+//        //本地启动mysql，创建employee_db数据库
+//        Flyway flyway = new Flyway();
+//        flyway.setDataSource("jdbc:mysql://localhost:3306/employee_db","root","root");
+//        flyway.clean();
+//        flyway.migrate();
+//    }
 
     @Test
     public void should_return_employee_when_input_employee_name() throws Exception {
